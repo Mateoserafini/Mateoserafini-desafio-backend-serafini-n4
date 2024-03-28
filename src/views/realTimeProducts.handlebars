@@ -1,0 +1,73 @@
+<div class="container px-4 py-3 bg-secondary-subtle mt-4 rounded">
+    <!--Crear producto-->
+    <form class="" id="formProduct">
+        <h2 class="">Crear Producto</h2>
+        <div class="">
+            <label for="title" class="form-label">Nombre</label>
+            <div class="input-group">
+                <input class="form-control" type="text" name="title" id="title"
+                    placeholder="Titulo del producto." required>
+            </div>
+        </div>
+        <div class="">
+            <label for="description" class="form-label">Descripción del
+                producto</label>
+            <div class="input-group">
+                <input class="form-control" type="text" name="description"
+                    id="description" placeholder="Descripcion el producto"
+                    required>
+            </div>
+        </div>
+        <div class="">
+            <label for="stock" class="form-label">Unidades disponibles</label>
+            <div class="input-group">
+                <input class="form-control" type="number" name="stock"
+                    id="stock" placeholder="Ej. 100" required>
+            </div>
+        </div>
+        <div class="">
+            <label for="img" class="form-label">imagen del producto</label>
+            <div class="input-group">
+                <input class="form-control" type="text" name="img" id="img" placeholder="Imagen del producto" required>
+            </div>
+        </div>
+        <div class="">
+            <label for="code" class="form-label">Codigo del
+                producto</label>
+            <div class="input-group">
+                <input class="form-control" type="text" name="code"
+                    id="code" placeholder="Codigo del producto ej.Cod123" required>
+            </div>
+        </div>
+        <div class="">
+            <label for="price" class="form-label">Precio</label>
+            <div class="input-group">
+                <input class="form-control" type="number" name="price"
+                    id="price" placeholder="Precio del producto" required>
+            </div>
+        </div>
+        <div class="">
+            <button class="" type="submit" id="add-Product">Agregar
+                producto</button>
+        </div>
+    </form>
+
+    <!--Eliminar producto por Id-->
+    <div class="">
+        <h2 class="">Eliminar Producto:</h2>
+        <div class="">
+                <input class="form-control" type="text" name="id-prod"
+                    id="id-prod" placeholder="Id producto">
+            
+        </div>
+        <div class="">
+            <button class="" type="button"
+                id="delete-btn">Eliminar producto</button>
+        </div>
+    </form>
+</div>
+<div class="" id="list-products">
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/script.js"></script>
