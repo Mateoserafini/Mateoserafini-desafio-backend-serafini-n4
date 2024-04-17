@@ -27,8 +27,8 @@ app.use('/api/products', productsRouter);
 app.use('/api/carts', cartsRouter);
 app.use('/', viewsRouter);
 
-const server = http.createServer(app); // Crea el servidor HTTP utilizando Express
-const socketServer = new Server(server); // Pasa el servidor HTTP a Socket.IO
+const server = http.createServer(app);
+const socketServer = new Server(server); 
 
 server.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);

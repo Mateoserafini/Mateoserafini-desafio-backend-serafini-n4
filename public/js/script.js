@@ -23,16 +23,16 @@ function ProductList(productList) {
               <h5 class="">${product.title}</h5>
               <p class="">${product.description} </p>
               <div class="">
-                <p class=""><span class="fw-bold"> Categoria: </span> ${product.code}</p>
+                <p class=""><span class=""> Categoria: </span> ${product.code}</p>
               </div>
               <div class="">
                 <p class="price"><span class="">precio: </span>${product.price} </p>
-                <p class=""><span class="fw-bold">Unidades disponibles:</span>
+                <p class=""><span class="">Unidades disponibles:</span>
                    ${product.stock}</p>
                 </div>
                 <div class="">
-                <small class=""><span class="fw-bold">ID:</span> ${product.id}</small>
-                <small class=""> <span class="fw-bold">code:</span> ${product.code} </small>
+                <small class=""><span class="">ID:</span> ${product.id}</small>
+                <small class=""> <span class="">code:</span> ${product.code} </small>
                 </div>
                 </div>
           </div>

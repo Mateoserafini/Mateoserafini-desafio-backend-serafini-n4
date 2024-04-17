@@ -74,11 +74,16 @@ export class ProductManager {
             if (index !== -1) {
                 products.splice(index, 1);
                 await fs.writeFile(this.path, JSON.stringify(products));
+
+                return { success: true, message: 'Producto eliminado correctamente' };
+
             } else {
-                throw new Error('Producto no encontrado');
+                return { success: false, message: 'Producto no encontrado' };
+
             }
         } catch (error) {
             throw new Error('Error al eliminar producto: ' + error.message);
+            
         }
     }
     
